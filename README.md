@@ -1,7 +1,7 @@
 # McUtils - Minecraft Utils
 
 ![Ruby Version](https://img.shields.io/badge/Ruby-3.x+-red)
-![Minecraft](https://img.shields.io/badge/Minecraft-1.12.2-green)
+![Minecraft](https://img.shields.io/badge/Minecraft-all_version-green)
 
 This project is a Ruby port of a JavaScript-based Minecraft bot flooder. It creates multiple bots that connect to a Minecraft server, perform actions like jumping and chatting, and simulate player activity.
 
@@ -22,7 +22,7 @@ This project is a Ruby port of a JavaScript-based Minecraft bot flooder. It crea
 1. Clone the repository:
    ```bash
    git clone https://github.com/FMZNkdv/MCUtils.git
-   cd minecraft-bot-flooder
+   cd MCUtils
    ```
 
 ## Configuration
@@ -53,30 +53,6 @@ fmznk1 sets jump to false
 fmznk1 says: ВАС ЕБУТ! БОТЫ ОТ tg@FMZNkdv
 ...
 ```
-
-## Implementation Details
-
-### Bot Class (`bot.rb`)
-- Handles individual bot logic
-- Manages:
-  - Connection lifecycle
-  - Jumping animations
-  - Chat message flooding
-  - Movement controls
-  - Error handling
-- Uses threads for concurrent actions
-
-### Bot Manager (`config.rb`)
-- Controls bot creation flow
-- Manages global constants
-- Implements staggered connection delays
-- Tracks all bot instances
-
-### Main Entrypoint (`main.rb`)
-- Initializes the bot manager
-- Starts the creation process
-- Keeps main thread alive
-
 ## Limitations
 1. **Simulation Only**: This implementation prints actions to console instead of connecting to real servers
 2. **Thread Limitations**: Creating thousands of threads may require optimization
