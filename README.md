@@ -3,8 +3,6 @@
 ![Ruby Version](https://img.shields.io/badge/Ruby-3.x+-red)
 ![Minecraft](https://img.shields.io/badge/Minecraft-all_version-green)
 
-This project is a Ruby port of a JavaScript-based Minecraft bot flooder. It creates multiple bots that connect to a Minecraft server, perform actions like jumping and chatting, and simulate player activity.
-
 ## Features
 - Creates multiple bots with sequential usernames
 - Automatic registration/login simulation
